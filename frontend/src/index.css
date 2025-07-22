@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Waveform styling */
+.waveform-container {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #374151;
+}
+
+/* Audio controls */
+.audio-controls {
+  @apply flex items-center space-x-4 p-4 bg-gray-800 rounded-lg;
+}
+
+/* EQ Visualizer */
+.eq-band {
+  @apply flex flex-col items-center space-y-2;
+}
+
+.eq-slider {
+  @apply w-6 h-32 bg-gray-700 rounded-full relative;
+}
+
+.eq-handle {
+  @apply w-6 h-6 bg-primary-500 rounded-full absolute transform -translate-x-0 cursor-pointer shadow-lg;
+}
+
+/* Chat interface */
+.chat-message {
+  @apply p-3 rounded-lg mb-2 max-w-xs;
+}
+
+.chat-user {
+  @apply bg-primary-600 text-white ml-auto;
+}
+
+.chat-ai {
+  @apply bg-gray-700 text-white mr-auto;
+}
+
+/* Loading animations */
+.loading-dots {
+  @apply inline-flex space-x-1;
+}
+
+.loading-dot {
+  @apply w-2 h-2 bg-primary-500 rounded-full animate-bounce;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
