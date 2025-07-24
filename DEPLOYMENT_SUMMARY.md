@@ -195,7 +195,7 @@ docker-compose down
 
 ### Environment Variables
 All necessary environment variables are pre-configured in `docker-compose.yml`:
-- **GEMINI_API_KEY**: AIzaSyBBT_R5HP4JI-Gkc1B8rHvYs-jPO1wzXVg
+- **GEMINI_API_KEY**: your_gemini_api_key
 - **DATABASE_URL**: PostgreSQL connection
 - **REDIS_URL**: Redis connection
 
