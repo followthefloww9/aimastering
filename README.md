@@ -43,9 +43,9 @@ cd ai-mastering-studio
 ```
 
 ### 2. Environment Configuration
-The Gemini API key is already configured in docker-compose.yml:
+Configure your Gemini API key in docker-compose.yml:
 ```
-GEMINI_API_KEY=AIzaSyBBT_R5HP4JI-Gkc1B8rHvYs-jPO1wzXVg
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
 ### 3. Start with Docker Compose
